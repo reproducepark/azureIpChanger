@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  myscript:
+    build: .
+    environment:
+      - SSH_ID=
+      - SSH_PW=
+      - RESOURCE_GROUP=
+      - IPCONFIG=
+      - NIC_NAME=
+    tty: true
+    stdin_open: true
