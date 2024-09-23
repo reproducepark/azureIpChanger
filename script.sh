@@ -67,6 +67,6 @@ EOF
 
 # 5. public ip 삭제
 echo "Deleting previous public IP: $PREV_PUBLIC_IP_NAME..."
-az network public-ip delete --resource-group ali2_group --name "$PREV_PUBLIC_IP_NAME"
+az network public-ip delete --resource-group "$RESOURCE_GROUP" --name "$PREV_PUBLIC_IP_NAME"
 
 echo "Script completed."
